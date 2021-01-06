@@ -3,20 +3,19 @@ const pokeName = document.getElementById("name");
 
 fetch("https://pokeapi.co/api/v2/pokemon/")
     .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
+    .then((inf) => {
+        //console.log(data);
+        DisplayData(inf);
 });
 
+//for update => when questionmark clicked => 1.reveal name 2. 1sec after show image of pokemon
 
-const displayData = (data) => {
-    nev.textContent = data.name;
-    //document.getElementById("nev").innerHTML = nev;
-};
+const i = Math.floor(Math.random() * 20);
+console.log(i);
+//pokeName.innerHTML =  data.results[i].name;
 
-
-
-
-
-
+const DisplayData = (inf) => {
+    pokeName.textContent = inf.results[i].name;
+}
 
 
