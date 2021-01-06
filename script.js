@@ -1,4 +1,5 @@
-const nev = document.getElementById("nev");
+const pokeImage = document.getElementById("poke-image");
+const pokeName = document.getElementById("name");
 
 fetch("https://pokeapi.co/api/v2/pokemon/")
     .then((response) => response.json())
