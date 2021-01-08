@@ -23,7 +23,7 @@ body{
 .wrapper{
     
     display: flex;
-    height:40vh;
+    height:45vh;
     width: 40vh;;
     flex-direction: column;
     align-items: center;
@@ -36,5 +36,33 @@ body{
 
 #poke-image{
     visibility: visible;
-    width:20vh;
+    width:17vh;
+    margin: 0 0 10px 0;
+}
+
+@media screen and (max-height: 660px) {
+    #poke-image {
+        width:12vh;  
+    }
+}
+.button{
+    width: 30%;
+    
+}
+#reveal {
+    background-color: rgb(226, 230, 173);
+    border: 1px solid rgba(58, 58, 58, 0.521);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    height: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+#reveal:hover {
+    border: 1px solid rgba(58, 58, 58, 0.521);
+    background-color: #e7e7e7;
 }
